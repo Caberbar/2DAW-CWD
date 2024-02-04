@@ -1,0 +1,59 @@
+Instrucciones:
+
+Comenta los ejercicios
+Valida los datos de entrada para evitar errores.
+No es necesario aplicar css a este examen.
+En ambos ejercicios puedes usar prompt() para la entrada de datos. 
+
+
+EJERCICIO 1
+
+Introduce el tamaño de una matriz indicando los dos valores (número de filas y número de columnas) y mediante estructuras de bucles, muestre en la consola aquellas posiciones que contengan ambas coordenadas un número impar.
+
+Ej Matriz3x5 (1,1) (1,3) ... (3,3),(3,5)
+
+
+
+EJERCICIO 2
+
+Realiza un script pida un mes y año e imprima su calendario. No hace falta esmerarse en la presentación del calendario, el calendario simplificado puede ser del tipo:
+
+Ejemplo: Mes 10 Año 2022
+
+Octubre de 2022
+
+1(Sabado)
+
+2(Domingo)
+
+3(Lunes)
+
+4(Martes)
+
+5(Miercoles)
+
+6(Jueves)
+
+7(Viernes)
+
+....
+
+30(Domingo)
+
+31(Lunes)
+
+
+
+Funciones útiles de Date:
+
+Date(año, mes, día) --> Crea un objeto date con los datos año, mes y día. 
+
+	Ej: Date(2022,11,25) -> 25 de Diciembre de 2022 (*los meses van del 0-11)
+
+fecha.getMonth() --> Devuelve el número de mes de una fecha (0-11)
+
+fecha.getDay() --> Devuelve el número de día de la semana (0-6)
+
+fecha.getDate() --> Devuelve el número del día del mes (1-31)
+
+fecha.setDate(fecha.getDate() + 1) --> Sumamos un día al objeto fecha

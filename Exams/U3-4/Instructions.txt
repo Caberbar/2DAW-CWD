@@ -1,0 +1,9 @@
+1. (3,5 puntos) Definir una clase FACTURA que almacena una factura. Una factura está formada por la información de la propia factura (nombre de la empresa, CIF, nombre_cliente, importe_total, IVA) y una lista de líneas de factura (cada una de los cuales dispone de nombre_producto , precio, cantidad).
+
+Una vez definidas las propiedades del objeto, añadir a la clase Factura un método que calcule el importe_total de la factura.
+
+Prueba los distintos métodos y propiedades con un ejemplo EN LA CONSOLA.
+
+
+
+2 (1,5 puntos) Diseña un formulario que permite introducir los datos de la factura y muestre los resultados por pantalla.
