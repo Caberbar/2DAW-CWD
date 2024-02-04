@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+            gap: 4rem;
+        }
+
+        .tabla {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+
+        tr:hover {
+            background-color: #d1d1d1;
+            cursor: pointer;
+        }
+
+        tr:first-child{
+            pointer-events: none;
+        }
+
+        .formulario {
+            flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            justify-content: center;
+
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            gap: 1rem;
+        }
+
+        button {
+            padding: 10px;
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            color: white;
+            background-color: rgb(11, 121, 157);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabla">
+        <table id="tabla">
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Age</td>
+            </tr>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>A5</td>
+                <td>B5</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </div>
+    <div class="formulario">
+        <form action="#">
+            <label name="First">First name:</label>
+            <input type="text" id="firstName" name="First" minlength="2" maxlength="2">
+            <label name="Last">Last name:</label>
+            <input type="text" id="lastName" name="Last" minlength="2" maxlength="2">
+            <label name="Age">Age:</label>
+            <input type="text" id="age" name="Age" minlength="2" maxlength="2">
+        </form>
+        <div class="buttons">
+            <button id="add">Add</button>
+            <button id="edit">Edit</button>
+            <button id="remove">Remove</button>
+        </div>
+    </div>
+    <script src="Ejercicio3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Actividad 4</title>
+</head>
+
+<body>
+    <form id="formulario">
+
+        <label>Nombre: </label><br>
+        <input type="text" id="nombre" required><br><br>
+
+        <input type="file" id="imagen" accept="image/*"><br><br>
+
+        <label>Edad: </label><br>
+        <input type="number" min="17" id="edad" required><br><br>
+
+        <label>Ciudad: </label><br>
+        <input type="text" id="ciudad"><br>
+
+        <label>Pais: </label><br>
+        <input type="text" id="pais"><br><br>
+
+        <label>Genero: </label><br>
+        <select id="genero" required>
+            <option value="">Selecciona un género</option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>Helicoptero</option>
+        </select><br><br>
+
+        <label>Teléfono: </label><br>
+        <input type="tel" id="telefono" required><br><br>
+
+        <label>E-Mail: </label><br>
+        <input type="email" id="email" pattern=".+@servidor\.es" required><br><br>
+
+        <label>Contraseña: </label><br>
+        <input type="password" id="password" required><br>
+
+        <label>Repita la contraseña: </label><br>
+        <input type="password" id="password2" required><br><br>
+
+        <label>Verificación: </label><br>
+        <input type="number" id="Verificacion" required placeholder="5 + 3"><br><br>
+
+        <input type="checkbox" id="condiciones" required><br>
+        <label>Acepto las condiciones</label><br><br>
+
+        <input type="submit" id="boton" value="Validar" disabled>
+    </form>
+
+    <button id="borrar">Borrar</button>
+    <div id="errores" style="color: red;"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

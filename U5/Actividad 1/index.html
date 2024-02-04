@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        body {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .Area{
+            text-align: center;
+        }
+
+        #Textarea{
+            min-width: 300px; /*Le damos una anchura minima*/
+            min-height: 100px; /*Le damos una altura minima*/
+
+            max-width: 500px; /*Le damos una anchura máxima*/
+            max-height: 500px; /*Le damos una altura máxima*/
+        }
+
+        #contador {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Area">
+        <textarea id="Textarea" maxlength="100"></textarea> <!-- Limitamos el número de palabras del tex área para asegurarnos a 100 palabras -->
+        <div id="contador">Limite de caracteres: 100</div> <!-- Mensaje que iremos cambiando ha medida que introduzca caracteres -->
+    </div>
+    <script src="Ejercicio1.js"></script>
+</body>
+
+</html>
