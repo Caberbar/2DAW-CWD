@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="Ejercicio1.js"></script>
+
+  <title>Ejercicio 1</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .cuerpo {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .imagen-container {
+      height: 500px;
+    }
+
+    .imagen {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .imagen img {
+      max-width: 500px;
+      max-height: 500px;
+    }
+
+    .botones input {
+      margin-top: 10px;
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cuerpo">
+    <div class="imagen-container">
+      <div class="imagen">
+        <img id="fotoperro" src="">
+        <img id="fotogato" src="">
+      </div>
+    </div>
+    <div class="botones">
+      <input type="button" id="perro" name="perro" value="RamDog">
+      <input type="button" id="gato" name="gato" value="RamCat">
+    </div>
+  </div>
+  <div id="resultado"></div>
+
+</body>
+
+</html>
